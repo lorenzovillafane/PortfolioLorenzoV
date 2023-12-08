@@ -12,3 +12,8 @@ export default {
 <template>
 <router-view></router-view>
 </template>
+<style>
+body{
+  display: flex;
+  justify-content: center;
+}</style>

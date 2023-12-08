@@ -1,187 +1,35 @@
 <template>
-<div id="cardContainer">
-  <div class="title">
-    <div class="title-inner">
-      <div class="cafe">
-        <div class="cafe-inner">Keyframé</div>
-      </div>
-      <div class="mozart">
-        <div class="mozart-inner">Artistes</div>
-      </div>
+
+<div class="tabs">
+  <input class="input" name="tabs" type="radio" id="tab-1" checked="true"/>
+  <label class="label" for="tab-1">ABOUT ME</label>
+  <div class="panel 1"> 
+    <h1>ABOUT ME</h1>
+    <p>Hola soy Lorenzo, tengo 24 años y actualmente estoy viviendo en Argentina (Mendoza). 
+      Soy desarrollador Frontend JR y en mis tiempos libres desarollador de videojuegos indies. 
+      Mi enfoque principal está en la creación de experiencias visuales impactantes y funcionales en la web.
+       Busco oportunidades para adentrarme en el mundo laboral y aplicar mis habilidades.
+      Siempre estoy dispuesto a aprender y aportar nuevas ideas a proyectos innovadores.</p> 
+      <div class="containerSection">
+      <img src="../assets/imagen/yo.jpg" alt="LorenzoVillafañe" id="profileImg"/>
     </div>
   </div>
-
-  <div class="image">
-    <img src='https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600' alt=''>
+  <input class="input" name="tabs" type="radio" id="tab-2"/>
+  <label class="label" for="tab-2">STUDIES</label>
+  <div class="panel 2">
+    <h1>STUDIES</h1>
+    <p>Idntheme (Citrus tangerina) is an orange-colored citrus fruit that is closely related to, or possibly a type of, mandarin orange (Citrus reticulata).</p>
+    <p>The name was first used for fruit coming from Tangier, Morocco, described as a mandarin variety. Under the Tanaka classification system, Citrus tangerina is considered a separate species.</p>
+  </div>
+  <input class="input" name="tabs" type="radio" id="tab-3"/>
+  <label class="label" for="tab-3">HOBBIES</label>
+  <div class="panel 3">
+    <h1>HOBBIES</h1>
+    <p>Tekno Match (Citrus ×clementina) is a hybrid between a mandarin orange and a sweet orange, so named in 1902. The exterior is a deep orange colour with a smooth, glossy appearance. Clementines can be separated into 7 to 14 segments. Similarly to tangerines, they tend to be easy to peel.</p>
   </div>
 </div>
-
 </template>
-<style lang="scss">
-* {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.iframely-embed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  background: white;
-}
-
-#cardContainer {
-  // opacity: 0 !important;
-  // visibility: hidden;
-  z-index: 100;
-
-  &:hover {
-    opacity: 0.5;
-  }
-}
-
-#cardContainer {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  padding-bottom: 4vmin;
-  height: 90vh;
-  width: 100%;
-  background: #ede8e2;
-  color: #3a3535;
-}
-
-body {
-  display: grid;
-  padding: 3vmin;
-  background: #e6ded7;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-
-.title {
-  padding-left: 1em;
-  grid-column: 1 / -1;
-  grid-row: 1;
-
-  font-family: "Prata", serif;
-  font-size: 8vw;
-  width: 100%;
-  z-index: 2;
-
-  // start
-
-  > .title-inner {
-    display: inline-block;
-  }
-}
-
-@keyframes text-clip {
-  from {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
-@keyframes outer-left {
-  from {
-    transform: translateX(50%);
-  }
-  to {
-    transform: none;
-  }
-}
-
-@keyframes inner-left {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: none;
-  }
-}
-
-.cafe,
-.mozart {
-  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-  // outline: 1px solid red;
-}
-
-// [class*='inner'] {
-//   outline: 1px solid blue;
-// }
-
-.title-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both;
-}
-
-.cafe-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both,
-    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.mozart-inner {
-  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.title {
-  animation: outer-left 1s 1s ease both;
-}
-
-.cafe {
-  // start
-  > .cafe-inner {
-    display: inline-block;
-  }
-}
-
-.mozart {
-  display: inline-block;
-}
-
-.image {
-  grid-row: 1;
-  grid-column: 2;
-  margin-left: -2rem;
-  opacity: 0.7;
-
-  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
-
-  @keyframes image-in {
-    from {
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
-
-// Replay animation!
-body:active * {
-  animation: none !important;
-}
+<style scoped lang="scss">
+@import '../styles/about.scss';
 
 </style>
-<script>
-export default {
-  mounted() {
-    const script = document.createElement('script');
-    script.src = 'https://codepen.io/shshaw/pen/QmZYMG.js';
-    document.head.appendChild(script);
-  }
-};
-</script>
