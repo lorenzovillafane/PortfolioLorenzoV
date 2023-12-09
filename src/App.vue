@@ -10,10 +10,14 @@ export default {
 </script>
 
 <template>
-<router-view></router-view>
+  <main>
+    <router-view></router-view>
+  </main>
+
 </template>
 <style>
-body{
+main{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }</style>
