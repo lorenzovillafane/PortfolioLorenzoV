@@ -16,6 +16,7 @@ export default {
 
 </template>
 <style>
+body{background-color: #EBE3D5;}
 main{
   display: flex;
   justify-content: center;

@@ -1,11 +1,11 @@
 <template>
   <header>
-    <router-link to="/">BACK TO MENU</router-link>
+    <router-link to="/">MENU</router-link>
   </header>
   <main>
     <div class="tabs">
       <input class="input" name="tabs" type="radio" id="tab-1" checked="true" />
-      <label class="label" for="tab-1">ABOUT ME</label>
+      <label class="label" for="tab-1">HARD SKILLS</label>
       <div class="panel">
         <h1>HARD SKILLS</h1>
         <div class="hardSkills">

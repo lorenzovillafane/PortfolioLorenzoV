@@ -1,13 +1,13 @@
 <template>
   <header>
-    <router-link to="/">BACK TO MENU</router-link>
+    <router-link to="/">MENU</router-link>
   </header>
   <main>
     <div class="tabs">
       <input class="input" name="tabs" type="radio" id="tab-1" checked="true" />
-      <label class="label" for="tab-1">ABOUT ME</label>
+      <label class="label" for="tab-1">SOBRE MI</label>
       <div class="panel">
-        <h1>ABOUT ME</h1>
+        <h1>SOBRE MI</h1>
         <p>
           Hola soy Lorenzo, tengo 24 años y actualmente estoy viviendo en
           Argentina (Mendoza). Soy desarrollador Frontend JR y en mis tiempos
@@ -26,9 +26,9 @@
         </div>
       </div>
       <input class="input" name="tabs" type="radio" id="tab-2" />
-      <label class="label" for="tab-2">STUDIES</label>
+      <label class="label" for="tab-2">ESTUDIOS</label>
       <div class="panel dos">
-        <h1>STUDIES</h1>
+        <h1>ESTUDIOS</h1>
         <ul>
           <li>
             Desarrollador Web Frontend VueJS | MINDHUB - ArgentinaPrograma

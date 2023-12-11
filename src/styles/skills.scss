@@ -111,9 +111,9 @@ header a {
   display: flex;
   justify-content: center;
   font-size: 40px;
-  color: #000;
+  color: #F2EBE9;
   text-decoration: none;
-  padding: 1%;
+  padding: 40px;
 }
 
 .hobbiesImg {
@@ -125,15 +125,15 @@ img {
   margin: 2%;
 }
 .code div{display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
 align-items: center;}
 .design{display: flex;
-  justify-content: center;
+  justify-content: space-around;
 
 }
 .engine{display: flex;
-  justify-content: center;
+  justify-content: space-around;
   }
   .engine img{width: 48px;}
   .hardSkills{margin-top: 15px ;}

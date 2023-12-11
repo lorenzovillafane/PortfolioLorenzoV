@@ -1,6 +1,6 @@
 <template>
   <header>
-    <router-link to="/">BACK TO MENU</router-link>
+    <router-link to="/">MENU</router-link>
   </header>
   <main>
     <div class="tabs">
