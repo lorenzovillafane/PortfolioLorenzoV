@@ -90,7 +90,7 @@ a:nth-child(1) {
   font-weight: bold;
 }
 a:nth-child(1) div {
-  background-color: #ee7214;
+  background-color: #BBAB8C;
   background-size: 360px;
   font-size: 25px;
   display: flex;
@@ -100,7 +100,7 @@ a:nth-child(1) div {
   flex-direction: column;
   text-decoration: none;
   font-size: bold;
-  color: white;
+  color: #3a332c;
 }
 a:nth-child(2) {
   border-radius: 0 40vmin 0 0;
@@ -111,7 +111,7 @@ a:nth-child(2) {
   text-decoration: none;
 }
 a:nth-child(2) div {
-  background-color: #ee7214;
+  background-color: #BBAB8C;
   background-size: 360px;
   font-size: 25px;
   display: flex;
@@ -121,7 +121,7 @@ a:nth-child(2) div {
   flex-direction: column;
   text-decoration: none;
   font-size: bold;
-  color: white;
+  color: #3a332c;
 }
 a:nth-child(3) {
   border-radius: 0 0 0 40vmin;
@@ -132,7 +132,7 @@ a:nth-child(3) {
   transition: transform 0.4s 0.25s;
 }
 a:nth-child(3) div {
-  background-color: #ee7214;
+  background-color: #BBAB8C;
   background-size: 360px;
   font-size: 25px;
   display: flex;
@@ -142,7 +142,7 @@ a:nth-child(3) div {
   flex-direction: column;
   text-decoration: none;
   font-size: bold;
-  color: white;
+  color: #3a332c;
 }
 a:nth-child(4) {
   border-radius: 0 0 40vmin 0;
@@ -154,7 +154,7 @@ a:nth-child(4) {
   transition: transform 0.4s 0.3s;
 }
 a:nth-child(4) div {
-  background-color: #ee7214;
+  background-color: #BBAB8C;
   background-size: 360px;
   font-size: 25px;
   display: flex;
@@ -164,7 +164,7 @@ a:nth-child(4) div {
   flex-direction: column;
   text-decoration: none;
   font-size: bold;
-  color: white;
+  color:#3a332c;
 }
 a:nth-child(4) div img {
   width: 84px;
