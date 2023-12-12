@@ -26,12 +26,19 @@
           aplicar mis habilidades. Siempre estoy dispuesto a aprender y aportar
           nuevas ideas a proyectos innovadores.
         </p>
+        
+       
         <div class="containerSection">
           <img
             src="../assets/imagen/yo.jpg"
             alt="LorenzoVillafañe"
             id="profileImg"
           />
+        </div><div class="curriculum">
+           <a href="../assets/Lorenzo Villafañe CV.pdf" download ><img src="../assets/icon/about/cv.png" alt="cv">
+          Descargar CV
+          
+        </a>
         </div>
       </div>
       <input class="input" name="tabs" type="radio" id="tab-2" />

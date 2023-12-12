@@ -164,3 +164,15 @@ img {
     margin: 15px;
   }
 }
+.curriculum{display: flex;
+justify-content: flex-end;
+align-content: center;
+align-items: center;}
+.curriculum a{display: flex;
+  justify-content: center
+  ;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+text-decoration: none;
+color: black;}

@@ -18,12 +18,14 @@
       <div class="panel">
         <h1>CONTACTO</h1>
 
-        <form id="form" class="topBefore">
-          <input id="name" type="text" placeholder="NOMBRE" />
-          <input id="asunto" type="text" placeholder="ASUNTO" />
-          <input id="email" type="email" placeholder="E-MAIL" />
-          <textarea id="message" type="text" placeholder="MENSAJE"></textarea>
+        <form id="form" class="topBefore" action="https://formsubmit.co/lorenzovillafane@gmail.com" method="POST">
+          <input id="name" type="text" placeholder="NOMBRE" name="name"/>
+          <input id="asunto" type="text" placeholder="ASUNTO" name="subject"/>
+          <input id="email" type="email" placeholder="E-MAIL" name="email"/>
+          <textarea id="message" type="text" placeholder="MENSAJE" name="comments"></textarea>
           <input id="submit" type="submit" value="ENVIAR" />
+        <input type="hidden" name="_next" value="http://localhost:5173/">
+        <input type="hidden" name="_captcha" value="false">
         </form>
       </div>
       <input class="input" name="tabs" type="radio" id="tab-2" />
