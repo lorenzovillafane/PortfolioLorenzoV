@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p>Welcome i'm</p>
+    <p>HOLA, SOY </p>
     <section class="animation">
       <div class="first"><div>Lorenzo Villafañe</div></div>
       <div class="second"><div>Front-End Developer</div></div>
