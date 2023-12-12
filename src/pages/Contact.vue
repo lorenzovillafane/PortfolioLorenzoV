@@ -1,6 +1,15 @@
 <template>
-  <header>
-    <router-link to="/">MENU</router-link>
+   <header>
+    <div class="back">
+      <router-link to="/">MENU</router-link>
+    </div >
+    <div class="menu"> 
+      <router-link to="/About">SOBRE MI</router-link>
+      <router-link to="/Skills">SKILLS</router-link>
+        <router-link to="/Projects">PROYECTOS</router-link>
+
+       
+    </div>
   </header>
   <main>
     <div class="tabs">
@@ -22,20 +31,17 @@
       <div class="panel dos">
         <h1>REDES SOCIALES</h1>
         <div class="socialPanel">
-          <a href=""
+          <a href="https://www.linkedin.com/in/lorenzo-villafa%C3%B1e/" target="_blank"
             ><img src="../assets/icon/social/linkedin.png" alt="linkedin"
           /></a>
-          <a href=""
+          <a href="https://telegram.me/lorenvillafane" target="_blank"
             ><img src="../assets/icon/social/telegram.png" alt="telegram"
           /></a>
-          <a href=""
+          <a href="https://wa.me/542613672542" target="_blank"
             ><img src="../assets/icon/social/whatsapp.png" alt="wpp"
           /></a>
-          <a href=""
+          <a href="https://github.com/lorenzovillafane" target="_blank"
             ><img src="../assets/icon/social/github.png" alt="github"
-          /></a>
-          <a href=""
-            ><img src="../assets/icon/social/gmail.png" alt="gmail"
           /></a>
         </div>
       </div>

@@ -1,6 +1,15 @@
 <template>
   <header>
-    <router-link to="/">MENU</router-link>
+    <div class="back">
+      <router-link to="/">MENU</router-link>
+    </div >
+    <div class="menu"> 
+     
+      <router-link to="/Skills">SKILLS</router-link>
+        <router-link to="/Projects">PROYECTOS</router-link>
+        <router-link to="/Contact">CONTACTO</router-link>
+       
+    </div>
   </header>
   <main>
     <div class="tabs">

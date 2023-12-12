@@ -1,16 +1,4 @@
-body header {
-    display: flex;
-    justify-content: flex-start;
-  }
-  header a {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: #000;
-    text-decoration: none;
-    padding: 1%;
-  }
-  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif");
 * {
   box-sizing: border-box;
@@ -117,17 +105,28 @@ main {
 }
 body header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
-header a {
+.back a {
   display: flex;
   justify-content: center;
   font-size: 40px;
-  color: #F2EBE9;
+  color: #3a332c;
   text-decoration: none;
-  padding: 40px;
+  margin: 15px;
 }
-
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+}
+.menu a {
+  font-size: 18px;
+  color: #3a332c;
+  text-decoration: none;
+  margin: 15px;
+}
 .hobbiesImg {
   display: flex;
   justify-content: space-around;
@@ -139,122 +138,215 @@ img {
 
 /*form*/
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+#form {
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+.topBefore input {
+  font-family: "Bree Serif", serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: #726659;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: #726659;
+  font-family: "Bree Serif", serif;
+  font-size: 0.875em;
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 470px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: "Bree Serif", serif;
+  font-size: 0.875em;
+  color: #000000;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+.socialPanel {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.socialPanel a {
+  margin: 2%;
+}
+@media (max-width: 600px) {
+  body header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #bbb5af;
+  .back a {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #3a332c;
+    text-decoration: none;
+    margin: 15px;
   }
-  
-  input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
   }
-  
-  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color: #bbb5af;
+  .menu a {
+    font-size: 14px;
+    color: #3a332c;
+    text-decoration: none;
+    margin: 15px;
   }
-  
-  input::placeholder, textarea::placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::placeholder, textarea::focus:placeholder {
-    color: #bbb5af;
-  }
-  
-  input::-ms-placeholder, textarea::-ms-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color: #bbb5af;
-  }
+
   #form {
-   
-    width: 500px;
+    width: 260px;
     margin: 50px auto 100px auto;
   }
-  
+
   .topBefore input {
     font-family: "Bree Serif", serif;
     font-size: 0.875em;
-    width: 470px;
+    width: 250px;
     height: 50px;
     padding: 0px 15px 0px 15px;
-    
+
     background: transparent;
     outline: none;
     color: #726659;
-    
+
     border: solid 1px #b3aca7;
     border-bottom: none;
-    
+
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
   }
-  
-  input:hover {
-    background: #b3aca7;
-    color: #e2dedb;
-  }
-  
+
   textarea {
-    width: 470px;
-    max-width: 470px;
+    width: 250px;
+    max-width: 300px;
     height: 110px;
     max-height: 110px;
     padding: 15px;
-    
+
     background: transparent;
     outline: none;
-    
+
     color: #726659;
     font-family: "Bree Serif", serif;
     font-size: 0.875em;
-    
-    border: solid 1px #b3aca7;
-    
+
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
   }
-  
-  textarea:hover {
-    background: #b3aca7;
-    color: #e2dedb;
-  }
-  
+
   #submit {
-    width: 470px;
-    
+    width: 250px;
+
     padding: 0;
     margin: -5px 0px 0px 0px;
-    
-    font-family: "Bree Serif", serif;
-    font-size: 0.875em;
-    color: #000000;
-    
-    outline:none;
-    cursor: pointer;
-    
-    border: solid 1px #b3aca7;
-    border-top: none;
   }
-  
-  #submit:hover {
-    color: #e2dedb;
+
+  .socialPanel a {
+    margin: 2%;
   }
-.socialPanel{  display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;}
-    .socialPanel a{
-        margin: 2%;
-      }
+}
