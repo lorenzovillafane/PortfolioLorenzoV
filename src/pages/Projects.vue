@@ -15,7 +15,7 @@
       <input class="input" name="tabs" type="radio" id="tab-1" checked="true" />
       <label class="label" for="tab-1">PROFESSOR SLOWBRO</label>
       <div class="panel">
-        <h1>PROFESSOR SLOWBRO</h1>
+        <a href="https://professor-slowbro.vercel.app/" target="_blank"><h1>PROFESSOR SLOWBRO</h1></a>
         <p>
           Professor Slowbro es una web dedicada a Pokémon y su ecosistema
           competitivo.
@@ -31,7 +31,7 @@
       <input class="input" name="tabs" type="radio" id="tab-3" />
       <label class="label" for="tab-3">TASKAPP</label>
       <div class="panel tres">
-        <h1>TASKAPP</h1>
+          <a href="https://task-app2-taupe.vercel.app/" target="_blank"><h1>TASKAPP</h1> </a>
         <p>
           Taskapp es una aplicacion para registrar tus tareas y llevar un
           registro de ellas.
