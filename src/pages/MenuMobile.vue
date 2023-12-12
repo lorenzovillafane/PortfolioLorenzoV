@@ -284,6 +284,46 @@
     background-color: green;
   }
 }
+
+@media (max-width: 365px) {
+  .container {
+    font-size: 25px;
+
+    margin-top: 60%;
+  }
+  .first,
+  .second,
+  .third {
+    flex: 1;
+    font-size: 18px;
+  }
+}
+@media (max-width: 278px) {
+  .container {
+    font-size: 20px;
+
+    margin-top: 60%;
+  }
+  .first,
+  .second,
+  .third {
+    flex: 1;
+    font-size: 12px;
+  }
+}
+@media (max-width: 212px) {
+  .container {
+    font-size: 15px;
+
+    margin-top: 60%;
+  }
+  .first,
+  .second,
+  .third {
+    flex: 1;
+    font-size: 12px;
+  }
+}
 </style>
 <script>
 export default {
