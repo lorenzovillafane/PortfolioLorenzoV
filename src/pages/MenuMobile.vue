@@ -21,10 +21,10 @@
               <router-link to="/Skills">SKILLS</router-link>
             </li>
             <li>
-              <router-link to="/Projects">PROJECTS</router-link>
+              <router-link to="/Projects">PROYECTOS</router-link>
             </li>
             <li>
-              <router-link to="/Contact">CONTACT</router-link>
+              <router-link to="/Contact">CONTACTO</router-link>
             </li>
           </ul>
         </div>
